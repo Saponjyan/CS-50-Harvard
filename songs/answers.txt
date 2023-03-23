@@ -1,0 +1,2 @@
+for example, the energy is may be 0.70, but the valency is much higher, for example, 0.9. so i would do like this
+(energy + valence + danceability)/3
