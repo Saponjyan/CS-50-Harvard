@@ -1,0 +1,6 @@
+1. request height
+if the height is from 1 to 8 then we accept and move on
+if not return on first step
+iterate the number of rows  and put \n
+iterate and put spaces
+iterate and put #
