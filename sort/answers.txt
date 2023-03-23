@@ -1,0 +1,17 @@
+sort1 uses: Bubble Sort
+
+How do you know?: sort1 is "Bubble Sort"  becouse its  is the slowest one on all  unsorted sets and faster on sorted sets then sort3 Best Case: Omega(n) Worst Case: O(n**2)
+
+sort2 uses: Merge Sort
+
+How do you know?: sort2 "Merge Sort" becouse its faster then ich others on all  unsorted sets Best Case: Omega(nlogn) Worst Case: O(nlogn)
+
+sort3 uses: Selection Sort
+
+How do you know?: sort3 is Selection Sort becouse its slowest on sorted sets Best Case: Omega(n**2) Worst Case: O(n**2)
+
+
+        random5000 random10000 random50000 reversed5000 reversed10000 reversed50000 sorted5000 sorted10000 sorte50000
+sort1   0.076       0.262       8.608       0.103       0.454           6.262       0.081       0.083       0.865
+sort2   0.025       0.082       0.667       0.026       0.055           0.579       0.043       0.081       0.843
+sort3   0.076       0.183       4.890       0.057       0.197           4.166       0.059       0.153       3.218
