@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    HOME
+{% endblock %}
+
+{% block main %}
+
+
+
+    <div class="section">
+
+        <h2>balanse</h2>
+
+
+        <table>
+            <thead>
+                <tr>
+                    <th>symbol</th>
+                    <th>name</th>
+                    <th>shares</th>
+                    <th>price</th>
+                    <th>total</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                    {% for s in stock %}
+                    <tr>
+                    <td>{{ s.symbol }}</td>
+                    <td>{{ s.name }}</td>
+                    <td>{{ s.shares }}</td>
+                    <td>{{ s.us }}</td>
+                    <td>{{ s.ustot }}</td>
+
+
+                    </tr>
+
+                {% endfor %}
+
+                <h4>Balance {{ balanse  }}</h4>
+                <br><br>
+                <h4>cash    {{ cash  }}</h4>
+
+
+            </tbody>
+
+        </table>
+    </div>
+
+{% endblock %}

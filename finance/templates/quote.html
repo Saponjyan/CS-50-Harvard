@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <form action="/quote" method="post">
+
+            <input  name="symbol" placeholder="symbol" type="symbol"/>
+            <br><br>
+            <button  type="submit">quote</button>
+            <br><br>
+    </form>
+{% endblock %}

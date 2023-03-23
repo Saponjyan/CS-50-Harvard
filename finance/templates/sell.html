@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    SELL
+{% endblock %}
+
+{% block main %}
+
+    <form action="/sell" method="post">
+            <h2>SELL</h2>
+            <h3>Choose a Symbol</h3>
+            <select name="symbol" type="symbol">
+                <!-- <option disabled selected>Choose a Symbol</option> -->
+                {% for i in sel %}
+                <option value="{{i.symbol}}">{{ i.symbol }}</option>
+            {% endfor %}
+                <!-- <option value="">--Please choose an option--</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="hamster">Hamster</option>
+                <option value="parrot">Parrot</option>
+                <option value="spider">Spider</option>
+                <option value="goldfish">Goldfish</option> -->
+            </select>
+            <br><br>
+            <input  name="shares" placeholder="count" type="text"/>
+            <br><br>
+            <button  type="submit">SELL</button>
+            <br><br>
+    </form>
+{% endblock %}
